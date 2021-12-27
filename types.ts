@@ -1,11 +1,11 @@
 export interface Store {
-  title: string;
-  description: string;
   id: string;
+  title: string;
   image: string;
+  description: string;
   location: {
-    map: string;
     address: string;
+    map: string;
     lat: number;
     lng: number;
   };

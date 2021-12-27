@@ -1,5 +1,4 @@
 import React from "react";
-import Head from "next/head";
 import Image from "next/image";
 
 interface Props {
@@ -16,12 +15,6 @@ const Page: React.VFC<Props> = ({children}) => {
         backgroundColor: "white",
       }}
     >
-      <Head>
-        <title>Tiency</title>
-        <meta content="Tiendas cercanas en la ciudad de Mar del Plata" name="description" />
-        <link href="/favicon.ico" rel="icon" />
-      </Head>
-
       <main
         style={{
           flex: 1,
