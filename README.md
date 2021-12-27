@@ -15,7 +15,7 @@ También unos puntos extra:
 * Consumir los datos de una base de datos real (Google Sheets, MongoDB, etc.).
 * Implementar la misma aplicación para la ciudad en la que vivís para ayudar a pequeños comerciantes.
 
-El cliente nos pidió que desplegemos nuestra aplicación y le demos un link para verla!
+El cliente nos pidió que despleguemos nuestra aplicación y le demos un link para verla!
 
 ---
 Slides: https://docs.google.com/presentation/d/1dEt_8I0Urru3w09yseA64T_3b4COIh09DEKtymojryU/edit#slide=id.g1087c820d6f_0_1
