@@ -7,7 +7,7 @@ interface Props {
   store: Store;
 }
 
-const StoreCard: React.VFC<Props> = ({store}) => {
+const StoreCard: React.FC<Props> = ({store}) => {
   return (
     <div style={{display: "flex", alignItems: "flex-start", gap: 12, lineHeight: 1}}>
       <Image
