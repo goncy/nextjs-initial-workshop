@@ -11,6 +11,7 @@ const MOCK = [
     location: {
       map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25147.79033508727!2d-57.5473714!3d-38.001392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc4acea437cf%3A0x3d0b14007abe7d25!2sManolo!5e0!3m2!1ses!2sar!4v1640036194553!5m2!1ses!2sar",
       address: "CMA, Rivadavia 2371",
+      city: "Quilmes",
       lat: -38.001392,
       lng: -57.5473714,
     },
@@ -25,6 +26,7 @@ const MOCK = [
     location: {
       map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25147.79033508727!2d-57.5473714!3d-38.001392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc4acea437cf%3A0x3d0b14007abe7d25!2sManolo!5e0!3m2!1ses!2sar!4v1640036194553!5m2!1ses!2sar",
       address: "Av. Patricio Peralta Ramos 4900",
+      city: "Quilmes",
       lat: -38.0127326,
       lng: -57.5596429,
     },
@@ -39,6 +41,7 @@ const MOCK = [
     location: {
       map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25147.79033508727!2d-57.5473714!3d-38.001392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dc4acea437cf%3A0x3d0b14007abe7d25!2sManolo!5e0!3m2!1ses!2sar!4v1640036194553!5m2!1ses!2sar",
       address: "Leandro N. Alem 3980",
+      city: "Quilmes",
       lat: -38.0297605,
       lng: -57.5549408,
     },
@@ -56,10 +59,8 @@ const api = {
 
     return store;
   },
-  hot: async (): Promise<Store> => {
-    const index = Math.floor(Math.random() * MOCK.length);
-
-    return MOCK[index];
+  near: async (city: string): Promise<Store> => {
+    return MOCK.find((store) => store.location.city === city) || MOCK[0];
   },
 };
 
