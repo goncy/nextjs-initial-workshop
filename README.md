@@ -8,7 +8,7 @@ Estamos haciendo una aplicación para la ciudad de Mar del Plata, Buenos Aires, 
 También nos pasaron estos requerimientos técnicos:
 * Debemos usar incremental static regeneration y debemos pre-renderizar todas las tiendas en build time.
 * Debemos tener una api pública para que la gente pueda consumir la lista de tiendas y tiendas específicas.
-* Debemos tener una ruta `/hot` que nos muestre la tienda más visitada.
+* Debemos tener una ruta `/near` que nos muestre la tienda más cercana.
 
 También unos puntos extra:
 * Crear un diseño nuevo.
